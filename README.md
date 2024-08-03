@@ -1,4 +1,4 @@
-Addons creates a set of shape keys and keyframes based on physic modifier.
+Blender Addons that creates a set of shape keys and keyframes based on physic modifier.
 
 Cloth/Soft body - choose which modifier will be used to make keys
 
