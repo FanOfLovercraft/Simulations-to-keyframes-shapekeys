@@ -145,7 +145,7 @@ class MainOperation(bpy.types.Operator):
 class CustomPanel(bpy.types.Panel):
     """Creates a Panel in the Object properties window"""
     bl_label = "Sim to skapekeys"
-    bl_idname = "OBJECT_StS"
+    bl_idname = "OBJECT_PT_StS"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
     bl_category = "Sim to skapekeys"
@@ -168,7 +168,7 @@ class CustomPanel(bpy.types.Panel):
         
         #accept and run program
         row = layout.row()
-        row.operator(MainOperation.bl_idname,text="Bake Skape Keys", icon='PLAY')
+        row.operator(MainOperation.bl_idname,text="Bake Keys", icon='PLAY')
 
 
 # Registration
