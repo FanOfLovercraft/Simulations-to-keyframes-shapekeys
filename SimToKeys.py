@@ -83,7 +83,7 @@ class MainOperation(bpy.types.Operator):
 
         if start<stop and name!="":
             
-            j=1
+            j=0
             #we go through all frames, last one included
             for i in range(start, stop+1,step):
                 
