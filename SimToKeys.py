@@ -83,7 +83,7 @@ class MainOperation(bpy.types.Operator):
 
         if start<stop and name!="":
             
-            j=1
+            j=0
             #we go through all frames, last one included
             for i in range(start, stop+1,step):
                 
@@ -104,7 +104,7 @@ class MainOperation(bpy.types.Operator):
                 #help index and end help select shapekey
                 index=j-start+1
                 
-                end=str(index-1)
+                end=str(j)
                 
                 #select current shapekey
                 bpy.context.object.active_shape_key_index = index
@@ -112,7 +112,7 @@ class MainOperation(bpy.types.Operator):
                 
                 
                 #if shapekey dosent have end .00x
-                if index==1:
+                if j==0:
                     #set current skapekey to 1 and inserts its keyframe
                     bpy.data.shape_keys["Key"].key_blocks[name].value = 1
                     bpy.context.object.data.shape_keys.key_blocks[name].keyframe_insert(data_path='value', frame=i)
