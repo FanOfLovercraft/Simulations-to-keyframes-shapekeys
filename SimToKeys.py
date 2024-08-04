@@ -1,12 +1,12 @@
 bl_info = {
-    "name": "Cuton add",
-    "author": "Your Name Here",
+    "name": "Physics to shapekeys/keyframes",
+    "author": "WWhite",
     "version": (1, 0),
     "blender": (2, 80, 0),
     "location": "View3D > N",
-    "description": " ",
-    "warning": " ",
-    "doc_url": " ",
+    "description": "Based on Physics simulation creates multiple shapekeys and corresponding keyframes",
+    "warning": "I'm new to this, so there may be bugs",
+    "doc_url": "",
     "category": "Object",
 }
 
@@ -83,7 +83,7 @@ class MainOperation(bpy.types.Operator):
 
         if start<stop and name!="":
             
-            j=0
+            j=1
             #we go through all frames, last one included
             for i in range(start, stop+1,step):
                 
@@ -145,7 +145,7 @@ class MainOperation(bpy.types.Operator):
 class CustomPanel(bpy.types.Panel):
     """Creates a Panel in the Object properties window"""
     bl_label = "Sim to skapekeys"
-    bl_idname = "OBJECT_PT_StS"
+    bl_idname = "OBJECT_StS"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
     bl_category = "Sim to skapekeys"
@@ -168,7 +168,7 @@ class CustomPanel(bpy.types.Panel):
         
         #accept and run program
         row = layout.row()
-        row.operator(MainOperation.bl_idname,text="Bake Keys", icon='PLAY')
+        row.operator(MainOperation.bl_idname,text="Bake Skape Keys", icon='PLAY')
 
 
 # Registration
