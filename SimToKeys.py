@@ -4,9 +4,9 @@ bl_info = {
     "version": (1, 0),
     "blender": (2, 80, 0),
     "location": "View3D > N",
-    "description": "",
-    "warning": "",
-    "doc_url": "",
+    "description": " ",
+    "warning": " ",
+    "doc_url": " ",
     "category": "Object",
 }
 
