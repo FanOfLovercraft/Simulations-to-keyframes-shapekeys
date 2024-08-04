@@ -1,11 +1,11 @@
 bl_info = {
-    "name": "Physics to shapekeys/keyframes",
-    "author": "WWhite",
+    "name": "Cuton add",
+    "author": "Your Name Here",
     "version": (1, 0),
     "blender": (2, 80, 0),
     "location": "View3D > N",
-    "description": "Based on Physics simulation creates multiple shapekeys and corresponding keyframes",
-    "warning": "I'm new to this, so there may be bugs",
+    "description": "",
+    "warning": "",
     "doc_url": "",
     "category": "Object",
 }
