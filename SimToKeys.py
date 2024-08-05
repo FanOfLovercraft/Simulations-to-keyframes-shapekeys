@@ -145,7 +145,7 @@ class MainOperation(bpy.types.Operator):
 class CustomPanel(bpy.types.Panel):
     """Creates a Panel in the Object properties window"""
     bl_label = "Sim to skapekeys"
-    bl_idname = "OBJECT_StS"
+    bl_idname = "OBJECT_PT_StS"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
     bl_category = "Sim to skapekeys"
